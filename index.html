@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Heinrich's Portfolio</title>
+    <style>
+        body {
+            background-color: black;
+            color: gold;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: blue;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 48px;
+            color: gold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: gold;
+            padding: 10px;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: blue;
+            color: gold;
+        }
+        section {
+            margin: 20px;
+        }
+        .computer-image {
+            filter: blur(5px) drop-shadow(0 0 10px gold);
+        }
+        .glowing-text {
+            font-size: 24px;
+            color: gold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 10px gold, 0 0 20px blue, 0 0 30px gold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Heinrich's Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Heinrich</h2>
+        <p class="glowing-text">Python programmer with a passion for coding and problem-solving.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p class="glowing-text">List your impressive Python projects here.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Heinrich</h2>
+        <p class="glowing-text">Email: heinrich@example.com</p>
+        <p class="glowing-text">LinkedIn: <a href="https://www.linkedin.com/in/heinrich" target="_blank">Heinrich's LinkedIn</a></p>
+    </section>
+    <img src="computer-image.jpg" alt="Computer" class="computer-image">
+</body>
+</html
